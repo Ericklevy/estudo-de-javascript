@@ -1,0 +1,71 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha() {
+    document.write("<br><hr><br>");
+    
+}
+
+function mostra(frase) {
+    
+
+    document.write("<big>"+frase+"</big>");
+    pulaLinha();
+}
+
+function fn() {
+
+    const values = [14,76,32,33,7,-10,2];
+    const filtered = values.filter(v => v > 0 && v % 2 == 0)
+    let magic = 0;
+    for (const x of filtered){
+        magic += x/2;
+       }
+    
+    return magic - values[1]
+
+    
+}
+
+function fnd() {
+
+    a = 14,b=10,c=1,d=7;
+
+    return ((a && b) || (!a && c)) ^ d
+
+
+}
+var r  = fn();
+var f = fnd();
+var ano = 2019;
+
+
+function touchHealth(){
+    for(var i = 1; i <=100 ; i++){
+        if(i%3 == 0 && i%5 == 0){
+            document.write("Touch Health");
+            document.write("<br><hr><br>");
+        
+        }else if (i%3 == 0){
+            document.write("Touch");
+            document.write("<br><hr><br>");
+        }else if (i%5 == 0){
+            document.write("Health");
+            
+            document.write("<br><hr><br>");
+        }else{
+            document.write(i );
+            document.write("<br><hr><br>");
+        }
+    }
+}
+
+var s  = touchHealth();
+mostra("result : " + f);
+mostra("result : " + r);
+mostra("Eu nasci em : " + (ano - 25));
+mostra("Adriano nasceu em : " + (ano - 26));
+mostra("Paulo nasceu em : " + (ano - 32));
+
+</script>

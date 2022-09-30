@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o meu numero</button>
+
+<script>
+    var segredo = 3;
+    //seleciona a tag htaml
+    var verde = document.querySelector("input");
+
+    function verifica() {
+
+        if(verde.value == segredo) {
+
+            alert("Você ACERTOU!");
+        } else {
+
+            alert("Você ERROU!!!!!!!!");
+        }
+
+    }
+
+    var button = document.querySelector("button");
+    //button.onclick ao clicar inicia a função
+    button.onclick = verifica;
+
+</script>
