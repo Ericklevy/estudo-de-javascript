@@ -1,3 +1,3 @@
 # JS
 
-# Repositorio de estudos em javascript
+# Repositorio de estudos em javascript , para aprimoração
